@@ -68,22 +68,24 @@
   <ItemGroup>
     <Content Include="app\app.js" />
     <Content Include="app\config.js" />
+    <Content Include="app\modules\account\account.module.js" />
+    <Content Include="app\modules\account\config\account.routes.js" />
+    <Content Include="app\modules\account\controllers\login.controller.js" />
+    <Content Include="app\modules\account\views\login.view.html" />
     <Content Include="app\modules\core\config\core.routes.js" />
     <Content Include="app\modules\core\controllers\home.controller.js" />
     <Content Include="app\modules\core\views\home.view.html" />
-    <Content Include="Content\app\content.css" />
-    <Content Include="Content\app\hamburg.css" />
-    <Content Include="Content\app\header.css" />
-    <Content Include="Content\app\main.css" />
-    <Content Include="Content\app\sidebar.css" />
     <Content Include="Content\app\style.css" />
-    <Content Include="Content\app\widgets.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\metisMenu.css" />
+    <Content Include="Content\metisMenu.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="fonts\montserrat-regular-webfont.svg" />
     <Content Include="index.html" />
     <Content Include="lab\startbootstrap-gh-pages\.gitattributes" />
     <Content Include="lab\startbootstrap-gh-pages\.gitignore" />
@@ -532,6 +534,12 @@
     <Content Include="lab\startbootstrap-gh-pages\templates\sb-admin-2\js\plugins\morris\morris.min.js" />
     <Content Include="lab\startbootstrap-gh-pages\templates\sb-admin-2\js\plugins\morris\raphael.min.js" />
     <Content Include="lab\startbootstrap-gh-pages\templates\sb-admin-2\js\sb-admin-2.js" />
+    <Content Include="lab\startbootstrap-gh-pages\templates\sb-admin-2\less\sb-admin-2.css">
+      <DependentUpon>sb-admin-2.less</DependentUpon>
+    </Content>
+    <Content Include="lab\startbootstrap-gh-pages\templates\sb-admin-2\less\sb-admin-2.min.css">
+      <DependentUpon>sb-admin-2.css</DependentUpon>
+    </Content>
     <Content Include="lab\startbootstrap-gh-pages\templates\sb-admin-2\login.html" />
     <Content Include="lab\startbootstrap-gh-pages\templates\sb-admin-2\morris.html" />
     <Content Include="lab\startbootstrap-gh-pages\templates\sb-admin-2\notifications.html" />
@@ -691,9 +699,6 @@
     <Content Include="Scripts\angular-cookies.min.js.map" />
     <Content Include="Scripts\angular-animate.min.js.map" />
     <Content Include="Scripts\angular.min.js.map" />
-    <Content Include="fonts\montserrat-regular-webfont.eot" />
-    <Content Include="fonts\montserrat-regular-webfont.ttf" />
-    <Content Include="fonts\montserrat-regular-webfont.woff" />
     <Content Include="app\modules\core\core.module.js" />
     <Content Include="lab\startbootstrap-gh-pages\assets\less\mixins.less" />
     <Content Include="lab\startbootstrap-gh-pages\assets\less\startbootstrap.less" />
@@ -1140,6 +1145,13 @@
     <Content Include="lab\startbootstrap-gh-pages\_posts\2014-07-16-showcase-charlotte-seaberry.md" />
     <Content Include="lab\startbootstrap-gh-pages\_posts\2014-07-16-showcase-provolve.md" />
     <Content Include="lab\startbootstrap-gh-pages\_posts\2014-07-16-template-agency.md" />
+    <Content Include="lab\startbootstrap-gh-pages\templates\sb-admin-2\less\sb-admin-2.css.map">
+      <DependentUpon>sb-admin-2.css</DependentUpon>
+    </Content>
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-1.9.0.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -1422,8 +1434,11 @@
     <Content Include="Scripts\i18n\angular-locale_zh.js" />
     <Content Include="Scripts\i18n\angular-locale_zu-za.js" />
     <Content Include="Scripts\i18n\angular-locale_zu.js" />
+    <Content Include="Scripts\initMenu.js" />
     <Content Include="Scripts\jquery-1.9.0.js" />
     <Content Include="Scripts\jquery-1.9.0.min.js" />
+    <Content Include="Scripts\metisMenu.js" />
+    <Content Include="Scripts\metisMenu.min.js" />
     <Content Include="Web.config" />
     <Content Include="Scripts\jquery-1.9.0.min.map" />
     <Content Include="Scripts\version.json" />

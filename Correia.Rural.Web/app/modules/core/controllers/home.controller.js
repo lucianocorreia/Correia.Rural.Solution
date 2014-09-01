@@ -1,4 +1,5 @@
 ﻿'use strict';
+
 (function () {
     angular.module('core').controller('homeController', homeController);
 
