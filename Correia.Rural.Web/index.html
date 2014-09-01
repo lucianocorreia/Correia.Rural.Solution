@@ -3,9 +3,47 @@
 <head>
     <title>Correia.Rural</title>
     <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/app/content.css" rel="stylesheet" />
+    <link href="Content/app/hamburg.css" rel="stylesheet" />
+    <link href="Content/app/header.css" rel="stylesheet" />
+    <link href="Content/app/main.css" rel="stylesheet" />
+    <link href="Content/app/sidebar.css" rel="stylesheet" />
+    <link href="Content/app/style.css" rel="stylesheet" />
+    <link href="Content/app/widgets.css" rel="stylesheet" />
 </head>
 <body>
+    <!-- Sidebar <div id="page-wrapper" ng-class="{'active': shell.toggle}" ng-cloak> -->
+    <div id="page-wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar">
+                <li class="sidebar-main">
+                    <a href="#" ng-click="shell.toggleSidebar()">
+                        Correia.Rural
+                        <span class="menu-icon glyphicon glyphicon-transfer"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
+    <!-- Content -->
+    <div id="content-wrapper">
+        <div class="page-content">
+
+            <div class="row header">
+                <div class="col-xs-12">
+                    <div class="user pull-right">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <section data-ng-view></section>
+
+        </div>
+    </div>
 
     <!-- Default JS -->
     <script src="Scripts/jquery-1.9.0.js"></script>
@@ -18,9 +56,18 @@
     <script src="Scripts/angular-cookies.js"></script>
     <script src="Scripts/angular-animate.js"></script>
     <script src="Scripts/angular-ui/ui-bootstrap.js"></script>
+    <script src="Scripts/angular-ui/ui-utils.js"></script>
 
     <!-- app -->
     <script src="app/config.js"></script>
     <script src="app/app.js"></script>
+
+    <!-- Modules -->
+
+    <!-- Core -->
+    <script src="app/modules/core/core.module.js"></script>
+    <script src="app/modules/core/config/core.routes.js"></script>
+    <script src="app/modules/core/controllers/home.controller.js"></script>
 </body>
+
 </html>
