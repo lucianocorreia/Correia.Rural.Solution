@@ -2,7 +2,7 @@
 
 (function () {
 
-	angular.module('account').factory('authenticationService', authenticationService);
+	angular.module('account').factory('accountService', authenticationService);
 
 	authenticationService.$inject = ['$http']
 

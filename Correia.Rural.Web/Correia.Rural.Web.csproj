@@ -58,7 +58,23 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <Content Include="app\modules\account\services\authentication.service.js" />
+    <Content Include="app\modules\account\services\account.service.js" />
+    <Content Include="Scripts\angular-loading-bar-0.5.0\.editorconfig" />
+    <Content Include="Scripts\angular-loading-bar-0.5.0\.jshintrc" />
+    <Content Include="Scripts\angular-loading-bar-0.5.0\bower.json" />
+    <Content Include="Scripts\angular-loading-bar-0.5.0\CHANGELOG.md" />
+    <Content Include="Scripts\angular-loading-bar-0.5.0\LICENSE" />
+    <Content Include="Scripts\angular-loading-bar-0.5.0\package.json" />
+    <Content Include="Scripts\angular-loading-bar-0.5.0\README.md" />
+    <Content Include="Scripts\angular-loading-bar-0.5.0\test\loading-bar-interceptor-config.coffee" />
+    <Content Include="Scripts\angular-loading-bar-0.5.0\test\loading-bar-interceptor.coffee" />
+    <Content Include="Scripts\angular-local-storage-master\.bowerrc" />
+    <Content Include="Scripts\angular-local-storage-master\.travis.yml" />
+    <Content Include="Scripts\angular-local-storage-master\bower.json" />
+    <Content Include="Scripts\angular-local-storage-master\LICENSE" />
+    <Content Include="Scripts\angular-local-storage-master\package.json" />
+    <Content Include="Scripts\angular-local-storage-master\README.md" />
+    <Content Include="Scripts\angular-local-storage-master\test\.jshintrc" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -666,6 +682,28 @@
     <Content Include="Scripts\angular-csp.css" />
     <Content Include="Scripts\angular-loader.js" />
     <Content Include="Scripts\angular-loader.min.js" />
+    <Content Include="Scripts\angular-loading-bar-0.5.0\.gitignore" />
+    <Content Include="Scripts\angular-loading-bar-0.5.0\build\loading-bar.css" />
+    <Content Include="Scripts\angular-loading-bar-0.5.0\build\loading-bar.js" />
+    <Content Include="Scripts\angular-loading-bar-0.5.0\build\loading-bar.min.css" />
+    <Content Include="Scripts\angular-loading-bar-0.5.0\build\loading-bar.min.js" />
+    <Content Include="Scripts\angular-loading-bar-0.5.0\example\app.css" />
+    <Content Include="Scripts\angular-loading-bar-0.5.0\example\app.js" />
+    <Content Include="Scripts\angular-loading-bar-0.5.0\example\index.html" />
+    <Content Include="Scripts\angular-loading-bar-0.5.0\Gruntfile.js" />
+    <Content Include="Scripts\angular-loading-bar-0.5.0\src\loading-bar.css" />
+    <Content Include="Scripts\angular-loading-bar-0.5.0\src\loading-bar.js" />
+    <Content Include="Scripts\angular-loading-bar-0.5.0\test\karma.conf.js" />
+    <Content Include="Scripts\angular-local-storage-master\.gitattributes" />
+    <Content Include="Scripts\angular-local-storage-master\.gitignore" />
+    <Content Include="Scripts\angular-local-storage-master\angular-local-storage.js" />
+    <Content Include="Scripts\angular-local-storage-master\angular-local-storage.min.js" />
+    <Content Include="Scripts\angular-local-storage-master\demo\demo-app.js" />
+    <Content Include="Scripts\angular-local-storage-master\demo\demo-style.css" />
+    <Content Include="Scripts\angular-local-storage-master\demo\demo.html" />
+    <Content Include="Scripts\angular-local-storage-master\Gruntfile.js" />
+    <Content Include="Scripts\angular-local-storage-master\test\karma.conf.js" />
+    <Content Include="Scripts\angular-local-storage-master\test\spec\localStorageSpec.js" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular-resource.js" />
     <Content Include="Scripts\angular-resource.min.js" />
