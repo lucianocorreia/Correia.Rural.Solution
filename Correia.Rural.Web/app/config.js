@@ -9,7 +9,7 @@ var ApplicationConfiguration = (function () {
 
     var _registerModule = function (moduleName, dependencies) {
         angular.module(moduleName, dependencies || []);
-        angular.module(applicationModuleName).requires.push(moduleName);
+        angular.module(_applicationModuleName).requires.push(moduleName);
     }
 
     return {
