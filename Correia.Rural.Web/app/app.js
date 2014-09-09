@@ -9,6 +9,14 @@ angular.module(ApplicationConfiguration.applicationModuleName).config(['$locatio
 	}
 ]);
 
+angular.module(ApplicationConfiguration.applicationModuleName).config(function ($httpProvider) {
+    $httpProvider.interceptors.push('authenticationService');
+});
+
+//angular.module(ApplicationConfiguration.applicationModuleName).run(['accountService', function (accountService) {
+//    accountService.fillAuthenticationData();
+//}]);
+
 //Then define the init function for starting up the application
 angular.element(document).ready(function () {        
     angular.bootstrap(document, [ApplicationConfiguration.applicationModuleName]);

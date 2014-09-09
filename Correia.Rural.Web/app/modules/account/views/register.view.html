@@ -1,0 +1,20 @@
+﻿<div class="row" data-ng-controller="signupController as signup">
+    <div class="col-lg-12">
+        <h1 class="page-header">{{ signup.title }}</h1>
+
+        <div data-ng-hide="signup.message == ''" class="alert alert-danger">
+            {{ signup.message }}
+        </div>
+
+
+        <form role="form">
+            <h2 class="form-login-heading">Sign up</h2>
+            <input type="text" class="form-control" placeholder="Username" data-ng-model="signup.registration.userName" required autofocus>
+            <input type="password" class="form-control" placeholder="Password" data-ng-model="signup.registration.password" required>
+            <input type="password" class="form-control" placeholder="Confirm Password" data-ng-model="signup.registration.confirmPassword" required>
+            <button class="btn btn-lg btn-info btn-block" type="submit" data-ng-click="signup.doSignup()">Submit</button>
+            <a data-ng-click="signup.Teste()">CLICK</a>
+        </form>
+
+    </div>
+</div>

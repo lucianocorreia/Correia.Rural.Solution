@@ -114,6 +114,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\CorreiaRuralDB.mdf" />
+    <Content Include="App_Data\CorreiaRuralDB_log.ldf">
+      <DependentUpon>CorreiaRuralDB.mdf</DependentUpon>
+    </Content>
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

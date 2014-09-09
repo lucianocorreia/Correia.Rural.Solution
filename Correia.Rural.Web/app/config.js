@@ -5,7 +5,7 @@ var ApplicationConfiguration = (function () {
 
     var _applicationModuleName = 'Correia.Rural';
     var _applicationModuleVendorDependencies = ['ngResource', 'ngCookies', 'ngRoute', 'ngAnimate', 'ngSanitize', 'ui.bootstrap', 'ui.utils', 'LocalStorageModule', 'angular-loading-bar'];
-    var _serviceBaseUrl = "http://localhost:2961/api/";
+    var _serviceBaseUrl = "http://localhost:2961/";
 
     var _registerModule = function (moduleName, dependencies) {
         angular.module(moduleName, dependencies || []);

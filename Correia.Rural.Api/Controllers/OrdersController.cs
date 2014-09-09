@@ -10,7 +10,7 @@ namespace Correia.Rural.Api.Controllers
     [RoutePrefix("api/Orders")]
     public class OrdersController : ApiController
     {
-        [Authorize]
+        //[Authorize]
         [Route("")]
         public IHttpActionResult Get()
         {

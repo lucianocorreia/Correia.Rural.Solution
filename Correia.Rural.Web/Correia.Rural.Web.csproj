@@ -60,6 +60,9 @@
     <Content Include="app\app.min.js">
       <DependentUpon>app.js</DependentUpon>
     </Content>
+    <Content Include="app\modules\account\controllers\signup.controller.js" />
+    <Content Include="app\modules\account\services\authentication.service.js" />
+    <Content Include="app\modules\account\views\register.view.html" />
     <Content Include="packages.config" />
     <Content Include="app\modules\account\services\account.service.js" />
     <Content Include="Scripts\angular-loading-bar-0.5.0\.editorconfig" />
@@ -1483,6 +1486,7 @@
     <Content Include="Scripts\jquery-1.9.0.min.js" />
     <Content Include="Scripts\metisMenu.js" />
     <Content Include="Scripts\metisMenu.min.js" />
+    <None Include="Scripts\_References.js" />
     <Content Include="Web.config" />
     <Content Include="Scripts\jquery-1.9.0.min.map" />
     <Content Include="Scripts\version.json" />

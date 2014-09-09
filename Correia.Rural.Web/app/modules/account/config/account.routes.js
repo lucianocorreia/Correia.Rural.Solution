@@ -7,5 +7,10 @@ angular.module('account').config(['$routeProvider', function ($routeProvider) {
         templateUrl: "app/modules/account/views/login.view.html"
     });
 
+    $routeProvider.when("/register", {
+        controller: "signupController",
+        templateUrl: "app/modules/account/views/register.view.html"
+    });
+
     $routeProvider.otherwise({ redirectTo: "/" });
 }]);
