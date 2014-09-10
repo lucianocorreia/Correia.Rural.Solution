@@ -34,6 +34,32 @@ namespace Correia.Rural.Api
             return user;
         }
 
+        #region Client and RefreshToken Methods
+
+        public Client FindClient(string clientId)
+        {
+            var client = _context.Clients.Find(clientId);
+            return client;
+        }
+
+        public async Task<bool> AddRefreshToken(RefreshToken token)
+        {
+            var existingToken = _context.RefreshTokens.Where(r => r.Subject == token.Subject && r.ClientId == token.ClientId).SingleOrDefault();
+            if(existingToken != null)
+            {
+                var result = await RemoveRefreshToken(existingToken);
+            }
+            _context.RefreshTokens.Add(token);
+            return await _context.SaveChangesAsync() > 0;
+        }
+
+        public async Task<bool> RemoveRefreshToken(srting refreshTokenId)
+        {
+
+        }
+
+        #endregion
+
         public void Dispose()
         {
             _context.Dispose();
